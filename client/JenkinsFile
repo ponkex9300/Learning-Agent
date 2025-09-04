@@ -56,7 +56,9 @@ pipeline {
               DEPLOY_OUTPUT=$(npx --yes vercel@latest deploy dist \
                 --prod \
                 --yes \
-                --token "$VERCEL_TOKEN")
+                --token "$VERCEL_TOKEN" \
+                --scope isc-system-core)
+
 
               echo "$DEPLOY_OUTPUT"
 
