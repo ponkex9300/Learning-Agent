@@ -87,7 +87,7 @@ const useClasses = () => {
       const userId = user?.id || "";
       return await claseService.softDeleteClase(classId, userId);
     } catch (error) {
-      console.error(`Error deleting class with id ${classId}`)
+      console.error(`Error deleting class with id ${classId}:`, error);
     }
   }
 
