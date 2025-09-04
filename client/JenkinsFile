@@ -57,7 +57,7 @@ pipeline {
                 --prod \
                 --yes \
                 --token "$VERCEL_TOKEN" \
-                --scope isc-system-core)
+                --scope "$VERCEL_ORG_ID")
 
 
               echo "$DEPLOY_OUTPUT"
